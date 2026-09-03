@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" role="img" aria-label="Топовысок">
+  <rect width="60" height="60" rx="13" fill="#0f5b4c"/>
+  <path d="M12 41 L26 19 L33 30 L48 11" fill="none" stroke="#fbfaf7" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="48" cy="11" r="4.2" fill="#c96a3a"/>
+  <text x="72" y="39" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1c2027">Топовысок</text>
+</svg>
