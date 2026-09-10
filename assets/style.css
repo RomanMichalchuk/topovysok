@@ -293,3 +293,90 @@ footer.site .links { display: flex; gap: 1rem; flex-wrap: wrap; }
   border-radius: 6px;
   z-index: 10;
 }
+
+/* author card */
+.author-card {
+  display: flex;
+  gap: .9rem;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin: 0 0 1.8rem;
+  background: #fff;
+}
+.author-card .ava {
+  flex: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.author-card .who { font-size: .93rem; }
+.author-card .who b { color: var(--ink); }
+.author-card .who span { color: var(--ink-soft); }
+.author-card .who .links { margin-top: .15rem; }
+.author-card .who .links a { margin-right: .8rem; font-size: .87rem; }
+
+/* AI-answer tracking */
+.ai-answers {
+  display: grid;
+  gap: 1.4rem;
+  grid-template-columns: 1fr;
+  margin: 0 0 1.4rem;
+}
+@media (min-width: 640px) {
+  .ai-answers { grid-template-columns: 1fr 1fr; }
+}
+.ai-col-title {
+  font-size: .95rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.ai-col-title::before {
+  content: "";
+  width: .55rem;
+  height: .55rem;
+  border-radius: 50%;
+  flex: none;
+}
+.ai-col-title.ok::before { background: var(--brand); }
+.ai-col-title.confused::before { background: var(--accent); }
+.ai-card {
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--brand);
+  border-radius: 0 8px 8px 0;
+  background: #fff;
+  padding: .85rem 1rem;
+  margin: .8rem 0 0;
+  font-size: .9rem;
+}
+.ai-card.confused { border-left-color: var(--accent); }
+.ai-q {
+  margin: 0 0 .35rem;
+  font-size: .85rem;
+}
+.ai-q b { color: var(--ink); }
+.ai-a {
+  margin: 0 0 .4rem;
+  color: var(--ink-soft);
+  font-size: .87rem;
+}
+.ai-src, .ai-note {
+  margin: 0;
+  font-size: .78rem;
+  color: var(--ink-soft);
+}
+.ai-note { color: var(--accent); }
+.ai-meta {
+  font-size: .82rem;
+  color: var(--ink-soft);
+  margin: -0.6rem 0 1.4rem;
+}
