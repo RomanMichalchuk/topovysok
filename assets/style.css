@@ -110,8 +110,24 @@ main li { margin-bottom: .4rem; }
 .meta {
   color: var(--ink-soft);
   font-size: .88rem;
-  margin: -0.4rem 0 1.6rem;
+  margin: -0.2rem 0 1.4rem;
 }
+
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem .9rem;
+  align-items: baseline;
+  padding: .9rem 1rem;
+  margin: 0 0 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper-alt);
+  font-size: .9rem;
+}
+.toc b { color: var(--ink); }
+.toc a { white-space: nowrap; }
+main h2[id] { scroll-margin-top: 1rem; }
 
 /* tables */
 .table-wrap { overflow-x: auto; margin: 0 0 1.4rem; }
